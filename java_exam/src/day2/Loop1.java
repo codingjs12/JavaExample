@@ -4,9 +4,15 @@ public class Loop1 {
 
 	public static void main(String[] args) {
 		
-		for(int i = 0; i < 1000; i++) {
-			System.out.println(i+1);
+		//홀수만 출력
+		for(int i = 0; i < 10; i++) {
+			
+			if(i % 2 == 1) {
+				System.out.println(i);
+			}
+			
 		}
+		
 	}
 
 }
