@@ -1,12 +1,10 @@
 package day2;
 
-import java.util.Scanner;
 
 public class If_3 {
 
 	public static void main(String[] args) {
 		// 다중 else ~ if
-		Scanner scan = new Scanner(System.in);
 		
 		int score = 100;
 		

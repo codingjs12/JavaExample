@@ -15,7 +15,6 @@ public class If_4 {
 		
 		System.out.print("나이를 입력하세요 : ");
 		int age = scan.nextInt();
-		scan.close();
 		
 		if(age < 20) {
 			System.out.println("성인이 아닙니다.");
@@ -31,6 +30,7 @@ public class If_4 {
 		} else {
 			System.out.println("50세 이상입니다.");
 		}
+		scan.close();
 		
 
 	}

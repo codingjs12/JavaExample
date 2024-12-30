@@ -11,7 +11,6 @@ public class Loop5 {
 		for(;;) {
 			System.out.print("(1)추가 (2)판매 (3)종료 : ");
 			int choice = scan.nextInt();
-			
 			if(choice == 1) {
 				System.out.println("추가되었습니다.");
 			} else if (choice == 2) {
@@ -23,5 +22,6 @@ public class Loop5 {
 				System.out.println("없는 메뉴 입니다.");
 				}
 			}
+		scan.close();
 	}
 }

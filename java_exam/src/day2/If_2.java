@@ -15,7 +15,6 @@ public class If_2 {
 		
 		System.out.print("숫자를 입력하세요 : ");
 		int num = scan.nextInt();
-		
 		boolean isEven = num % 2 == 0;
 		
 		if(isEven) {
@@ -24,6 +23,7 @@ public class If_2 {
 			System.out.println("홀수 입니다.");
 		}
 		
+		scan.close();
 	}
 
 }
