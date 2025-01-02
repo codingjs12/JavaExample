@@ -14,7 +14,7 @@ public class Array10 {
 			System.out.print("배열 크기를 입력하세요!!! : ");
 			input = scan.nextInt();
 
-			if (input > 0) {
+			if (input > 1) {
 				arr = new int[input];
 				for (int i = 0; i < arr.length; i++) {
 					System.out.print("숫자를 입력하세요!!! : ");
@@ -28,7 +28,7 @@ public class Array10 {
 				}
 				break;
 			} else {
-				System.out.println("0이상의 정수를 입력하세요.");
+				System.out.println("1이상의 정수를 입력하세요.");
 			}
 
 		}
