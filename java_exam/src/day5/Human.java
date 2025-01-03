@@ -16,4 +16,14 @@ public class Human {
 		System.out.println("맛있는걸 먹는다!!!");
 	}
 
+	public void intro(String name, int age, String addr) {
+		System.out.println(name + "의 나이는 " + age + ", 주소는 " + addr + "입니다!!!");
+
+	}
+
+	public void intro(String name) {
+		System.out.println(name + "의 나이는 " + age + ", 주소는 " + addr + "입니다!!!");
+		System.out.println(name + "의 본명은 " + this.name);
+	}
+
 }
