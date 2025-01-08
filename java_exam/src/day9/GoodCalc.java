@@ -11,5 +11,9 @@ public class GoodCalc extends Calculator {
 	int div(int x, int y) {
 		return x / y;
 	}
+	
+	int mod(int x, int y) {
+		return x % y;
+	}
 
 }
