@@ -8,9 +8,17 @@ public class ArrayRef {
 
 		int arr2[] = arr;
 
-		arr2[3] = 100;
+//		arr2[3] = 100;
 
 		System.out.println(arr[3]);
+
+		int max = ArrayClass.maxValue(arr2);
+
+		System.out.println(max);
+		
+		int maxIndex = ArrayClass.maxIndex(arr2);
+		
+		System.out.println(maxIndex);
 
 	}
 }
