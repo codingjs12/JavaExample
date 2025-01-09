@@ -14,6 +14,10 @@ public class Test {
 		return n++;
 	}
 
+	public static void increase2(int m) {
+		m = m + 1;
+	}
+
 	public static void increase(Circle c) {
 		c.radius++;
 	}
@@ -23,6 +27,8 @@ public class Test {
 		int n = 30;
 
 		n = increase(n);
+
+		increase2(n);
 
 		System.out.println(n);
 

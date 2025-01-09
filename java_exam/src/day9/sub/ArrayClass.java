@@ -17,8 +17,8 @@ public class ArrayClass {
 	public static int maxIndex(int[] array) {
 		int maxIndex = 0;
 
-		for (int i = 0; i < array.length; i++) {
-			if (maxValue(array) == array[i]) {
+		for (int i = 1; i < array.length; i++) {
+			if (array[maxIndex] < array[i]) {
 				maxIndex = i;
 			}
 		}
