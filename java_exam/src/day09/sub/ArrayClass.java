@@ -25,24 +25,40 @@ public class ArrayClass {
 
 		return index;
 	}
-	
+
+	public static int minvalue(int arr[]) {
+		int min = arr[0];
+		for (int value : arr) {
+			min = value < min ? value : min;
+		}
+		return min;
+	}
+
 	public static int minIndex(int arr[]) {
 		int index = 0;
-		for(int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			if (arr[index] > arr[i]) {
 				index = i;
 			}
 		}
 		return index;
 	}
-	
-	public static void change(int arr[]) {
+
+	public static void maxMinchange(int arr[]) {
+
+		int max = 0;
+		int min = 0;
+
+		for (int i = 1; i < arr.length; i++) {
+			max = arr[i] > arr[max] ? i : max;
+			min = arr[i] < arr[min] ? i : min;
+		}
+
 		int temp;
-		temp = arr[maxIndex(arr)];
-		arr[maxIndex(arr)] = arr[minIndex(arr)];
-		arr[minIndex(arr)] = temp;
-		
+		temp = arr[max];
+		arr[max] = arr[min];
+		arr[min] = temp;
+
 	}
-	
 
 }

@@ -24,7 +24,7 @@ public class ArrayRef {
 		
 		System.out.println(Arrays.toString(arr2));
 		
-		ArrayClass.change(arr2);
+		ArrayClass.maxMinchange(arr2);
 		
 		System.out.println(Arrays.toString(arr2));
 		
