@@ -1,7 +1,5 @@
 package day10;
 
-import java.util.Arrays;
-
 public class Test {
 
 	public static void addNum(int n) {

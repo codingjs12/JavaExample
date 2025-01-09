@@ -15,15 +15,34 @@ public class ArrayClass {
 	}
 
 	public static int maxIndex(int[] array) {
-		int maxIndex = 0;
+		int index = 0;
 
 		for (int i = 1; i < array.length; i++) {
-			if (array[maxIndex] < array[i]) {
-				maxIndex = i;
+			if (array[index] < array[i]) {
+				index = i;
 			}
 		}
 
-		return maxIndex;
+		return index;
 	}
+	
+	public static int minIndex(int arr[]) {
+		int index = 0;
+		for(int i = 0; i < arr.length; i++) {
+			if (arr[index] > arr[i]) {
+				index = i;
+			}
+		}
+		return index;
+	}
+	
+	public static void change(int arr[]) {
+		int temp;
+		temp = arr[maxIndex(arr)];
+		arr[maxIndex(arr)] = arr[minIndex(arr)];
+		arr[minIndex(arr)] = temp;
+		
+	}
+	
 
 }

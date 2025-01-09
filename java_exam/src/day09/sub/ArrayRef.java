@@ -1,5 +1,7 @@
 package day09.sub;
 
+import java.util.Arrays;
+
 public class ArrayRef {
 
 	public static void main(String[] args) {
@@ -19,6 +21,16 @@ public class ArrayRef {
 		int maxIndex = ArrayClass.maxIndex(arr2);
 		
 		System.out.println(maxIndex);
+		
+		System.out.println(Arrays.toString(arr2));
+		
+		ArrayClass.change(arr2);
+		
+		System.out.println(Arrays.toString(arr2));
+		
+		int minIndex = ArrayClass.minIndex(arr2);
+		
+		System.out.println(minIndex);
 
 	}
 }
