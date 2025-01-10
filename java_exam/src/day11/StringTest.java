@@ -21,6 +21,8 @@ public class StringTest {
 			System.out.println(str);
 		}
 
+		scan.close();
+
 	}
 
 }
