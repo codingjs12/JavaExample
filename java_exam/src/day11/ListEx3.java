@@ -33,6 +33,7 @@ public class ListEx3 {
 							+ ", 주소 : " + list.get(i).getAddr());
 				}
 			} else if (index == 3) {
+				System.out.println("종료!!!");
 				break;
 			}
 		}
