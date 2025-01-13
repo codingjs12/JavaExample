@@ -30,7 +30,7 @@ public class Test7 {
 			}
 		}
 		System.out.println(count + "번 만에 맞추셨습니다.");
-
+		scan.close();
 	}
 
 }

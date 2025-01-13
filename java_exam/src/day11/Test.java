@@ -37,6 +37,7 @@ public class Test {
 		char c = a.charAt(2); // 인덱스 2의 문자 리턴
 		System.out.println(c);
 
+		scan.close();
 	}
 
 }

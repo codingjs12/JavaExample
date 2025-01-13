@@ -34,13 +34,13 @@ public class ListMap {
 						break;
 					}
 				}
-				
-				if(!updateFlg) {
+
+				if (!updateFlg) {
 					map.put("이름", name);
 					map.put("포인트", point);
 					list.add(map);
 				}
-				
+
 			} else if (menu == 2) {
 				System.out.print("이름 : ");
 				String name = scan.next();
@@ -53,7 +53,6 @@ public class ListMap {
 
 			} else if (menu == 3) {
 				break;
-
 			}
 		}
 		scan.close();
