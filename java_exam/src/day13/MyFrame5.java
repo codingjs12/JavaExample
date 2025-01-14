@@ -6,19 +6,21 @@ import java.awt.Container;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class MyFrame4 extends JFrame {
+public class MyFrame5 extends JFrame {
 
-	public MyFrame4() {
+	public MyFrame5() {
 		setTitle("첫번째 GUI");
 
 		Container c = getContentPane();
 		c.setBackground(Color.cyan);
 		c.setLayout(null);
 
-		JButton btn = new JButton("test");
-		btn.setSize(60, 60);
-		btn.setLocation(100, 150);
-		c.add(btn);
+		for (int i = 1; i <= 9; i++) {
+			JButton btn = new JButton(i + "");
+			btn.setSize(50, 20);
+			btn.setLocation(i * 15, i * 15);
+			c.add(btn);
+		}
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(300, 300);
@@ -28,6 +30,6 @@ public class MyFrame4 extends JFrame {
 	}
 
 	public static void main(String[] args) {
-		MyFrame4 gui = new MyFrame4();
+		MyFrame5 gui = new MyFrame5();
 	}
 }
