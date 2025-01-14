@@ -18,6 +18,19 @@ public class ListMap2 {
 		}
 	}
 
+	public static boolean isExist(ArrayList<HashMap<String, Object>> list) {
+		System.out.print("과일 이름 : ");
+		String name = scan.next();
+		HashMap<String, Object> map;
+		for (int i = 0; i < list.size(); i++) {
+			map = list.get(i);
+			if (name.equals(map.get("name"))) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	public static void main(String[] args) {
 
 		ArrayList<HashMap<String, Object>> list = new ArrayList<>();
@@ -73,39 +86,31 @@ public class ListMap2 {
 //					}
 //				}
 			} else if (menu == 2) {
-				boolean exist = false;
+					if (isExist(list)) {
+						System.out.println("판매 개수 : ");
+						int num = scan.nextInt();
+						if (num > (int) map.get("num")) {
+							System.out.println("재고가 부족합니다.");
+							System.out.println("현재 남은 개수는 : ");
+						} else {
+							map.put("num", (int) map.get("num") - num);
+						}
+					}
+			} else if (menu == 3) {
 				System.out.print("과일 이름 : ");
 				String name = scan.next();
-				HashMap<String, Object> user = null;
-				for (int i = 0; i < list.size(); i++) {
-					user = list.get(i);
-					if (name.equals(user.get("name"))) {
-						exist = true;
-						break;
+				for(int i = 0; i < list.size(); i++) {
+					HashMap<String, Object> fruit = list.get(i);
+					if(name.equals(fruit.get("name"))) 
+						System.out.println(
+								name +"의 가격은 " + fruit.get("price") +
+								", 개수는 "+fruit.get("num")+"개 남았습니다.");
 					}
-				}
-				if (!exist) {
-					System.out.println("없는 과일 입니다.");
-				}
-				if (exist) {
-					System.out.print("구매 개수 : ");
-					int num = scan.nextInt();
-					int stock = (int) user.get("num") - num;
-					if(stock < 0) {
-						System.out.println("현재 " + user.get("num") + "남아있습니다.");
-					} else {
-						user.put("num", stock);
-					}
-				}
-			} else if (menu == 3) {
-				System.out.println(list);
 			} else if (menu == 4) {
 				System.out.println("종료합니다!!!");
 				break;
 			} else {
 				System.out.println("잘못 입력하셨습니다!!!");
 			}
-		}
-		scan.close();
-	}
-}
+		}scan.close();
+}}
