@@ -33,7 +33,7 @@ public class Images extends JFrame {
 		c.add(label3);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(500, 500);
+		setSize(1000, 1000);
 		setVisible(true);
 
 	}
