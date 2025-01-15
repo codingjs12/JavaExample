@@ -30,7 +30,9 @@ public class JComponentEx extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				btn2.setEnabled(!btn2.isEnabled());
-				btn.setVisible(false);
+				c.remove(btn);
+				revalidate();
+				repaint();
 			}
 		});
 
