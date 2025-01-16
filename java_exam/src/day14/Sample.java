@@ -19,5 +19,4 @@ public class Sample extends JFrame {
 		new Sample();
 
 	}
-
 }
