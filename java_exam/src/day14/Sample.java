@@ -1,14 +1,16 @@
 package day14;
 
 import java.awt.Container;
+import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 
 public class Sample extends JFrame {
 
 	public Sample() {
-		setTitle("버튼 컴포넌트");
+		setTitle("");
 		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(300, 300);
