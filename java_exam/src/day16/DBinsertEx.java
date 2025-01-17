@@ -44,15 +44,15 @@ public class DBinsertEx {
 			System.out.print("학과를 입력하세요 : ");
 			String stu_dept = scan.next();
 
-			System.out.println("INSERT INTO STUDENT(STU_NO, STU_NAME, STU_DEPT) VALUES ('" + stu_no + "'" + ", '"
-					+ stu_name + "'" + ", '" + stu_dept + "')");
-			int num = stmt.executeUpdate("INSERT INTO STUDENT(STU_NO, STU_NAME, STU_DEPT) VALUES ('" + stu_no + "'"
-					+ ", '" + stu_name + "'" + ", '" + stu_dept + "')");
+			System.out.println("INSERT INTO STUDENT(STU_NO, STU_NAME, STU_DEPT) VALUES ('" + stu_no + "', '"
+					+ stu_name + "', '" + stu_dept + "')");
+			int num = stmt.executeUpdate("INSERT INTO STUDENT(STU_NO, STU_NAME, STU_DEPT) VALUES ('" + stu_no + 
+					"', '" + stu_name + "', '" + stu_dept + "')");
 
-			if (num == 0) {
-				System.out.println("DB 연결 실패");
+			if (num > 0) {
+				System.out.println("추가되었습니다.");
 			} else {
-				System.out.println("삽입 성공");
+				System.out.println("오류 발생!");
 			}
 
 		} catch (ClassNotFoundException e) {
