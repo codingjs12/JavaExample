@@ -14,23 +14,23 @@ public class UserManager {
 			Scanner scan = new Scanner(System.in);
 			DBClass db = new DBClass();
 			Statement stmt = db.stmt;
-			
+
 			String id = "";
-			
-			while(true) {
+
+			while (true) {
 				System.out.print("아이디 : ");
 				String input = scan.next();
 				String select = "SELECT * FROM TBL_USER WHERE USERID = '" + input + "'";
-				
+
 				ResultSet rs = stmt.executeQuery(select);
-				
-				if(rs.next()) {
+
+				if (rs.next()) {
 					System.out.println("이미 존재하는 아이디 입니다.");
 				} else {
 					id = input;
 					break;
 				}
-				
+
 			}
 
 			System.out.print("비밀번호 : ");
