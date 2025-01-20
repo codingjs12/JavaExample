@@ -11,5 +11,10 @@ public class PersonMain {
 		
 		System.out.println(kim);
 		
+		
+		System.out.println(kim.study("자바"));
+		
+		
+		
 	}
 }

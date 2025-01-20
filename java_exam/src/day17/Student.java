@@ -19,5 +19,9 @@ public class Student extends Person {
 	public String toString() {
 		return super.toString() + "\n학번은 " + stuNo + ", 학년은 " + grade + "학년 입니다.";
 	}
+	
+	public String study(String sub) {
+		return sub + "는 재밌다!";
+	}
 
 }
