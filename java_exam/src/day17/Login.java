@@ -23,8 +23,8 @@ public class Login {
 				System.out.print("비밀번호 : ");
 				String inputPWD = scan.next();
 
-				String selectSQL = "SELECT * FROM TBL_USER WHERE USERID = '" + inputID + "' AND PASSWORD = '" + inputPWD
-						+ "'";
+				String selectSQL = "SELECT * FROM TBL_USER WHERE USERID = '"
+				+ inputID + "' AND PASSWORD = '" + inputPWD + "'";
 
 				ResultSet rs = stmt.executeQuery(selectSQL);
 				if (rs.next()) {
@@ -38,7 +38,7 @@ public class Login {
 
 			scan.close();
 		} catch (Exception e) {
-
+			System.out.println(e.getMessage());
 		}
 
 	}
