@@ -2,7 +2,7 @@ package day05;
 
 public class Human {
 
-	protected String name;
+	public String name;
 	protected int age;
 	protected String addr;
 	protected double height;
