@@ -39,15 +39,17 @@ public class Review_ListMap2 {
 		for (int i = 0; i < list.size(); i++) {
 			HashMap<String, Object> map = list.get(i);
 			if (map.get("이름").equals(name)) {
-				System.out.println(map);
+				System.out.print("수정할 주소 입력 : ");
+				String addr = scan.next();
+				map.put("주소", addr);
 				userFlg = true;
 				break;
 			}
 		}
-		if (userFlg == false) {
+		if (!userFlg) {
 			System.out.println("없는 사용자");
 		}
-
+		System.out.println(list);
 		scan.close();
 	}
 }
